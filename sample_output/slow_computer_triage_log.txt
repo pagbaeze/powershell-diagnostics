@@ -1,1 +1,214 @@
+===== Slow Computer Triage Report =====
+Date: 05/05/2026 14:23:49
+Computer: LAPTOP-SJF74P4M
+User: Prince
+
+===== Summary =====
+Uptime Days: 2.48
+CPU Usage: 3.78%
+Memory Usage: 79.46%
+Disk Free: 43.84%
+Network: OK
+DNS: OK
+
+===== Recommendations =====
+- No major system, disk, or network issue detected. Continue troubleshooting application-specific causes.
+
+===== Auto Ticket Summary =====
+Issue: Slow computer reported.
+Device: LAPTOP-SJF74P4M
+User: Prince
+
+Findings:
+- No major system, disk, or network issue detected during initial triage.
+
+Actions Taken:
+- Ran automated slow-computer triage script.
+- Reviewed uptime, CPU, memory, disk space, top processes, IP configuration, connectivity, DNS, and traceroute.
+
+Next Steps:
+- Continue troubleshooting app-specific slowness, browser issues, user profile issues, or endpoint policy issues.
+
+===== Detailed Raw Results =====
+--- System Information ---
+OS: Microsoft Windows 11 Pro
+OS Version: 10.0.26200
+Manufacturer: LENOVO
+Model: 21MW
+RAM: 14.85 GB
+Last Boot Time: 05/03/2026 02:59:08
+
+--- Top 5 Processes by CPU Usage ---
+
+Name          Id        CPU
+----          --        ---
+chrome     19848       1034
+chrome     18304 709.578125
+chrome     15136     697.75
+Zoom        1768  402.21875
+quick-look 18180 361.796875
+
+
+--- Top 5 Processes by Memory Usage ---
+
+Name                  Id Memory_MB
+----                  -- ---------
+Memory Compression  4084    988.64
+chrome             19848    966.86
+chrome             26148    508.22
+explorer            9712    436.84
+chrome             18304    392.31
+
+
+--- IP Configuration ---
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : LAPTOP-SJF74P4M
+   Primary Dns Suffix  . . . . . . . : 
+   Node Type . . . . . . . . . . . . : Broadcast
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Realtek PCIe GbE Family Controller
+   Physical Address. . . . . . . . . : 84-BA-59-46-E4-5A
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Ethernet adapter Ethernet 4:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : VirtualBox Host-Only Ethernet Adapter
+   Physical Address. . . . . . . . . : 0A-00-27-00-00-0C
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::b272:ac8b:e65e:28e4%12(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 738852903
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-30-7A-4F-CF-C0-35-32-6F-0B-C1
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter
+   Physical Address. . . . . . . . . : C2-35-32-6F-0B-C1
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #2
+   Physical Address. . . . . . . . . : C6-35-32-6F-0B-C1
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+
+Ethernet adapter VMware Network Adapter VMnet1:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet1
+   Physical Address. . . . . . . . . : 00-50-56-C0-00-01
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::cff6:ba2e:1c52:228d%15(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.87.1(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : Tuesday, May 5, 2026 12:10:56 AM
+   Lease Expires . . . . . . . . . . : Tuesday, May 5, 2026 2:50:34 PM
+   Default Gateway . . . . . . . . . : 
+   DHCP Server . . . . . . . . . . . : 192.168.87.254
+   DHCPv6 IAID . . . . . . . . . . . : 822104150
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-30-7A-4F-CF-C0-35-32-6F-0B-C1
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Ethernet adapter VMware Network Adapter VMnet8:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet8
+   Physical Address. . . . . . . . . : 00-50-56-C0-00-08
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::e7ea:f5bb:29ed:715c%13(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.88.1(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : Tuesday, May 5, 2026 12:10:56 AM
+   Lease Expires . . . . . . . . . . : Tuesday, May 5, 2026 2:50:34 PM
+   Default Gateway . . . . . . . . . : 
+   DHCP Server . . . . . . . . . . . : 192.168.88.254
+   DHCPv6 IAID . . . . . . . . . . . : 838881366
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-30-7A-4F-CF-C0-35-32-6F-0B-C1
+   Primary WINS Server . . . . . . . : 192.168.88.2
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter
+   Physical Address. . . . . . . . . : C0-35-32-6F-0B-C1
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   IPv6 Address. . . . . . . . . . . : fdca:c6ff:b185:1:d3a8:db94:db2b:e100(Preferred) 
+   Temporary IPv6 Address. . . . . . : fdca:c6ff:b185:1:4137:d700:fcaa:5324(Preferred) 
+   Link-local IPv6 Address . . . . . : fe80::6209:3332:66b5:5b9c%16(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.4.60(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.252.0
+   Lease Obtained. . . . . . . . . . : Tuesday, May 5, 2026 12:10:59 AM
+   Lease Expires . . . . . . . . . . : Tuesday, May 5, 2026 5:43:10 PM
+   Default Gateway . . . . . . . . . : 192.168.4.1
+   DHCP Server . . . . . . . . . . . : 192.168.4.1
+   DHCPv6 IAID . . . . . . . . . . . : 146814258
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-30-7A-4F-CF-C0-35-32-6F-0B-C1
+   DNS Servers . . . . . . . . . . . : 192.168.4.1
+                                       fdca:c6ff:b185:1::1
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+--- Ping Test: 8.8.8.8 ---
+
+Source        Destination     IPV4Address      IPV6Address                              Bytes    Time(ms) 
+------        -----------     -----------      -----------                              -----    -------- 
+LAPTOP-SJF... 8.8.8.8         8.8.4.4          2001:4860:4860::8888                     32       21       
+LAPTOP-SJF... 8.8.8.8         8.8.4.4          2001:4860:4860::8888                     32       23       
+LAPTOP-SJF... 8.8.8.8         8.8.4.4          2001:4860:4860::8888                     32       22       
+LAPTOP-SJF... 8.8.8.8         8.8.4.4          2001:4860:4860::8888                     32       23       
+
+
+
+--- DNS Resolution Test: google.com ---
+
+Name                                           Type   TTL   Section    IPAddress                                
+----                                           ----   ---   -------    ---------                                
+google.com                                     AAAA   245   Answer     2607:f8b0:4001:c19::66                   
+google.com                                     AAAA   245   Answer     2607:f8b0:4001:c19::71                   
+google.com                                     AAAA   245   Answer     2607:f8b0:4001:c19::8b                   
+google.com                                     AAAA   245   Answer     2607:f8b0:4001:c19::64                   
+google.com                                     A      293   Answer     209.85.145.100                           
+google.com                                     A      293   Answer     209.85.145.101                           
+google.com                                     A      293   Answer     209.85.145.102                           
+google.com                                     A      293   Answer     209.85.145.113                           
+google.com                                     A      293   Answer     209.85.145.138                           
+google.com                                     A      293   Answer     209.85.145.139                           
+
+
+
+--- Traceroute: google.com, 3 hops max ---
+
+Tracing route to google.com [209.85.145.100]
+over a maximum of 3 hops:
+
+  1     5 ms    13 ms     2 ms  192.168.4.1 
+  2    11 ms    21 ms     4 ms  10.34.176.129 
+  3     *       50 ms    16 ms  10.224.99.1 
+
+Trace complete.
+
+===== End of Report =====
 
